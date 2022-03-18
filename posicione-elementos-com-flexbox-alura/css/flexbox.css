@@ -1,0 +1,59 @@
+.cabecalhoPrincipal .container { /*Pai dos elementos que queremos alinhar do cabeçalho*/
+    display: flex; /*Pai como flexbox*/
+    align-items: center; /*Alinha os elementos dentro do flexbox no centro*/
+    justify-content: space-between; /*posiciona o espaço que sobrou do pai, entre os elementos filhos*/
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex; /*Pai como flexbox*/
+    align-items: center; /*Alinha os elementos dentro do flexbox no centro*/
+}
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    height: 260px; /*define uma altura para a flexbox(elemento pai) */
+    flex-direction: column; /*Muda a direção da flexbox de linhas para colunas */
+    flex-wrap: wrap; /*Faz a quebra das linhas(ou colunas) que nao couberem no tamanho do pai, jogando o restante para a proxima linha(ou coluna)*/
+   /*flex-flow: column wrap; */ /* forma simplificada juntando as duas propriedades acima*/
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex; /*Pai como flexbox*/
+    align-items: center; /*Alinha os elementos dentro do flexbox no centro*/
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex; /*Pai como flexbox*/
+    align-items: center; /*Alinha os elementos dentro do flexbox no centro*/  
+    justify-content: space-around; /*posiciona o espaço que sobrou do pai, ao redor dos elementos filhos*/
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+
+/*O display: flex tambem faz com que os filhos do elemento pai fiquem com a mesma altura, posicionados um do lado do outro: */
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
